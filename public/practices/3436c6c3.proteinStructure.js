@@ -622,7 +622,7 @@ function LoadPDB()
 	$("#practice_session").append(Jmol.getAppletHtml("jmolApplet0", Info));
     $("#practice_session #jmolApplet0_appletinfotablediv").css("z-index", 0);
 
-  Jmol.script(jmolApplet0,'background IMAGE "components/images/background.jpg";');
+  //Jmol.script(jmolApplet0,'background IMAGE "components/images/background.jpg";');
 	Jmol.script(jmolApplet0,'set specular 10; set specularPower 50; set specularExponent 2; label off; monitor off; set frank off; set ambient 90; set diffuse 90; measure OFF; set picking ON; selectionHalos OFF; hide all');
 	Jmol.script(jmolApplet0, molecules[currentMol].initTransform);
 
