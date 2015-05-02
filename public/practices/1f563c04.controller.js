@@ -346,7 +346,7 @@ function showPopUp() {
 }
 
 function showNavigationButtons() {
-  console.log('stage: ', stage);
+  console.log('---stage:-----: ', stage);
   if (isThereAtLeastOneStageBefore()) {
     showPrevButton();
   } else {
