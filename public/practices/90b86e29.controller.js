@@ -1,3 +1,7 @@
+var currentSection = 0;
+var stage = 0;
+var dragOpen = true;
+
 function startPractice() {
   restartStateVariables();
   hideComponents();
@@ -36,11 +40,6 @@ function Start() {
   ShowStageUI();
 
 }
-
-
-var currentSection = 0;
-var stage = 0;
-var dragOpen = true;
 
 // show the instructions at the beginning of a stage
 function ShowStageUI() {
@@ -244,7 +243,6 @@ function AddInputField(question, answer, answerLabel) {
 // Pernix
 
 function restartStateVariables() {
-  var currentSection = 0;
   var stage = 0;
   var dragOpen = true;
 }
@@ -348,6 +346,7 @@ function showPopUp() {
 }
 
 function showNavigationButtons() {
+  console.log('stage: ', stage);
   if (isThereAtLeastOneStageBefore()) {
     showPrevButton();
   } else {
